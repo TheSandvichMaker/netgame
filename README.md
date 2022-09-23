@@ -1,6 +1,11 @@
 # netgame
-I wrote this client and server over the course of about two weeks because I wanted to learn a little bit about network programming, something which I had no prior experience with whatsoever.
-The netcode was written using winsock, after following [beej's networking guide](https://beej.us/guide/bgnet/).
+
+![NetClient_mG5eqr2TNU](https://user-images.githubusercontent.com/49493579/191978644-52ce240f-bd24-4402-85f5-a210eb61fa8f.gif)
+
+I wrote this client and server over the course of about two weeks because I wanted to learn a little bit about network programming, something which I had no prior experience with whatsoever.  
+
+The netcode was written using winsock, after following [beej's networking guide](https://beej.us/guide/bgnet/).  
+The client was written using wonderful [raylib](https://www.raylib.com/index.html) for input and graphics.
 
 The game is completely server-authoritative, following the design of Quake in that clients only send inputs to the server and receive entities to render. This is a very simple and robust scheme, however it suffers heavily from latency because all actions of the client need to go through the server and back before their results can be seen. I chose this model for its simplicity to get started, not because it's a good way to write a networked game.
 
