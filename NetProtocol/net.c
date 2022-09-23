@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stddef.h>
 #include <assert.h>
+#include <stdalign.h>
 
 #include <WinSock2.h>
 #include <WS2tcpip.h>
@@ -63,7 +64,7 @@ static void Net_RecordPacketStat(net_stat_direction_e direction, int size);
 // ------------------------------------------------------------------
 
 enum { PACKET_BUFFER_SIZE = INT16_MAX };
-static _Alignas(16) char g_packet_buffer[PACKET_BUFFER_SIZE];
+static alignas(16) char g_packet_buffer[PACKET_BUFFER_SIZE];
 
 int Net_Init(void)
 {
