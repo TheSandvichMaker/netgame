@@ -441,7 +441,7 @@ void World_Tick(float dt)
 							{
 								// there's a different (or no) entity at this index in the
 								// server's packet, so our entity must have been destroyed.
-								cl->id.value = INVALID_ENTITY_INDEX;
+								cl->id.index = INVALID_ENTITY_INDEX;
 								CL_SpawnParticleExplosion(cl->x, cl->y);
 							}
 						}
