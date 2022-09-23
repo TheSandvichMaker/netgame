@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetClient", "NetGame\NetGame.vcxproj", "{9AD20799-D6F6-4858-AA72-507CACAC4741}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetServer", "NetServer\NetServer.vcxproj", "{81B76E82-86B5-4D98-962E-2393BC51B449}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetProtocol", "NetProtocol\NetProtocol.vcxitems", "{AE2B350F-F1AD-4615-B574-569A0120D087}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AD20799-D6F6-4858-AA72-507CACAC4741}.Debug|x64.ActiveCfg = Debug|x64
+		{9AD20799-D6F6-4858-AA72-507CACAC4741}.Debug|x64.Build.0 = Debug|x64
+		{9AD20799-D6F6-4858-AA72-507CACAC4741}.Debug|x86.ActiveCfg = Debug|Win32
+		{9AD20799-D6F6-4858-AA72-507CACAC4741}.Debug|x86.Build.0 = Debug|Win32
+		{9AD20799-D6F6-4858-AA72-507CACAC4741}.Release|x64.ActiveCfg = Release|x64
+		{9AD20799-D6F6-4858-AA72-507CACAC4741}.Release|x64.Build.0 = Release|x64
+		{9AD20799-D6F6-4858-AA72-507CACAC4741}.Release|x86.ActiveCfg = Release|Win32
+		{9AD20799-D6F6-4858-AA72-507CACAC4741}.Release|x86.Build.0 = Release|Win32
+		{81B76E82-86B5-4D98-962E-2393BC51B449}.Debug|x64.ActiveCfg = Debug|x64
+		{81B76E82-86B5-4D98-962E-2393BC51B449}.Debug|x64.Build.0 = Debug|x64
+		{81B76E82-86B5-4D98-962E-2393BC51B449}.Debug|x86.ActiveCfg = Debug|Win32
+		{81B76E82-86B5-4D98-962E-2393BC51B449}.Debug|x86.Build.0 = Debug|Win32
+		{81B76E82-86B5-4D98-962E-2393BC51B449}.Release|x64.ActiveCfg = Release|x64
+		{81B76E82-86B5-4D98-962E-2393BC51B449}.Release|x64.Build.0 = Release|x64
+		{81B76E82-86B5-4D98-962E-2393BC51B449}.Release|x86.ActiveCfg = Release|Win32
+		{81B76E82-86B5-4D98-962E-2393BC51B449}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68AB92DC-C0AD-4B90-BAAF-750310B758A2}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		NetProtocol\NetProtocol.vcxitems*{81b76e82-86b5-4d98-962e-2393bc51b449}*SharedItemsImports = 4
+		NetProtocol\NetProtocol.vcxitems*{9ad20799-d6f6-4858-aa72-507cacac4741}*SharedItemsImports = 4
+		NetProtocol\NetProtocol.vcxitems*{ae2b350f-f1ad-4615-b574-569a0120d087}*SharedItemsImports = 9
+	EndGlobalSection
+EndGlobal
