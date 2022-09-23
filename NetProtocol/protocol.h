@@ -23,8 +23,6 @@ typedef enum net_packet_e
 
 	// this is the packet that the server sends back to the client
 	// to let it know about the entities in the game world
-	NETPACKET_ENTITY_UPDATE,
-
 	NETPACKET_WORLD_STATE,
 } net_packet_e;
 
@@ -109,7 +107,7 @@ typedef struct net_entity_state_t
 	float size;             // 24
 } net_entity_state_t;
 
-// this packet comes to 3080 bytes, which will likely be fragmented into 3 separate IP packets,
+// this packet comes to 4236 bytes, which will likely be fragmented into 3 separate IP packets,
 // if any one of those fragments is lost, all of the packet is discarded.
 // so this is not the best way to send a big state update!
 // of course, we only need to send updates for entities that actually exist... exercise for the
